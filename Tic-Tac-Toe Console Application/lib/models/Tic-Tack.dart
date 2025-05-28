@@ -76,7 +76,7 @@ class TicTacToe {
     while (true) {
       try {
         final input = stdin.readLineSync()!;
-        if (input == null || input.isEmpty)
+        if (input.isEmpty)
           throw FormatException('Input cannot be empty');
         final number = int.parse(input);
         if (number < min || number > max) {
